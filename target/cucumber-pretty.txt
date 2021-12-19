@@ -1,0 +1,56 @@
+
+Scenario Outline: Covid-19 Game Default user Creation                                                     # src/test/features/Covid19GameApplication.feature:10
+  Given I Open the  COVID19 GAME Application                                                              # stepDefinitions.Covid19GameSteps.i_open_the_covid19_the_game_application()
+  When I click create warrior                                                                             # stepDefinitions.Covid19GameSteps.i_click_create_warrior()
+  Then Default User is created and start your Journey button is displayed with Default warrior name guest # stepDefinitions.Covid19GameSteps.default_user_is_created_and_start_your_journey_button_is_displayed_with_default_warrior_name(java.lang.String)
+
+Scenario Outline: Covid-19 Game User Creation                                           # src/test/features/Covid19GameApplication.feature:19
+  Given I Open the  COVID19 GAME Application                                            # stepDefinitions.Covid19GameSteps.i_open_the_covid19_the_game_application()
+  When I Enter warrior name tes and click create warrior                                # stepDefinitions.Covid19GameSteps.i_enter_warrior_name_and_click_create_warrior(java.lang.String)
+  Then User is created and start your Journey button is displayed with warrior name tes # stepDefinitions.Covid19GameSteps.user_is_created_and_start_your_journey_button_is_displayed_with_warrior(java.lang.String)
+
+Scenario Outline: User Journey of Successful Public Transport warrior battle field game and check the leadership board # src/test/features/Covid19GameApplication.feature:35
+  Given I Open the  COVID19 GAME Application                                                                           # stepDefinitions.Covid19GameSteps.i_open_the_covid19_the_game_application()
+  When I Enter warrior name tes and click create warrior                                                               # stepDefinitions.Covid19GameSteps.i_enter_warrior_name_and_click_create_warrior(java.lang.String)
+  Then start your Journey button is displayed and I click on the button to start the game                              # stepDefinitions.Covid19GameSteps.start_your_journey_button_is_displayed_and_i_click_on_the_button_to_start_the_game()
+  Then it routed to the Battle Field game Home page To Select the battle                                               # stepDefinitions.Covid19GameSteps.it_routed_to_the_battle_field_game_home_page_to_select_the_battle()
+  When I click on the Public Transport Game                                                                            # stepDefinitions.Covid19GameSteps.i_click_on_the_public_transport_game()
+  Then Public bus game start button is displayed and click on the button to start                                      # stepDefinitions.Covid19GameSteps.public_bus_game_start_button_is_displayed_and_click_on_the_button_to_start()
+  When I click on the Safe option                                                                                      # stepDefinitions.Covid19GameSteps.i_click_on_the_safe_option()
+  Then I can see the result                                                                                            # stepDefinitions.Covid19GameSteps.i_can_see_the_result()
+  When I click the final score button                                                                                  # stepDefinitions.Covid19GameSteps.i_click_the_final_score_button()
+  Then I will see the leadership board for the final score of warrior tes                                              # stepDefinitions.Covid19GameSteps.i_will_see_the_leadership_board_for_the_final_score_of_warrior(java.lang.String)
+
+Scenario Outline: User Journey of Successful Public place battle field game and check the leadership board # src/test/features/Covid19GameApplication.feature:51
+  Given I Open the  COVID19 GAME Application                                                               # stepDefinitions.Covid19GameSteps.i_open_the_covid19_the_game_application()
+  When I Enter warrior name tes and click create warrior                                                   # stepDefinitions.Covid19GameSteps.i_enter_warrior_name_and_click_create_warrior(java.lang.String)
+  Then start your Journey button is displayed and I click on the button to start the game                  # stepDefinitions.Covid19GameSteps.start_your_journey_button_is_displayed_and_i_click_on_the_button_to_start_the_game()
+  Then it routed to the Battle Field game Home page To Select the battle                                   # stepDefinitions.Covid19GameSteps.it_routed_to_the_battle_field_game_home_page_to_select_the_battle()
+  When I click on Go to a public place Game button                                                         # stepDefinitions.Covid19GameSteps.i_click_on_go_to_a_public_place_game_button()
+  Then seated at a Resturant game start button is displayed and click on the button to start the game      # stepDefinitions.Covid19GameSteps.seated_at_a_resturant_game_start_button_is_displayed_and_click_on_the_button_to_start_the_game()
+  When I click on the Safe option for the the public place game                                            # stepDefinitions.Covid19GameSteps.i_click_on_the_safe_option_for_the_the_public_place_game()
+  Then I can see the result for the public place game                                                      # stepDefinitions.Covid19GameSteps.i_can_see_the_result_for_the_public_place_game()
+  When I click the final score button to check the score after public place game                           # stepDefinitions.Covid19GameSteps.i_click_the_final_score_button_to_check_the_score_after_public_place_game()
+  Then I will see the leadership board for the final score of warrior tes                                  # stepDefinitions.Covid19GameSteps.i_will_see_the_leadership_board_for_the_final_score_of_warrior(java.lang.String)
+
+Scenario Outline: Successful Work place battle field game Journey and check the leadership board # src/test/features/Covid19GameApplication.feature:67
+  Given I Open the  COVID19 GAME Application                                                     # stepDefinitions.Covid19GameSteps.i_open_the_covid19_the_game_application()
+  When I Enter warrior name tes and click create warrior                                         # stepDefinitions.Covid19GameSteps.i_enter_warrior_name_and_click_create_warrior(java.lang.String)
+  Then start your Journey button is displayed and I click on the button to start the game        # stepDefinitions.Covid19GameSteps.start_your_journey_button_is_displayed_and_i_click_on_the_button_to_start_the_game()
+  Then it routed to the Battle Field game Home page To Select the battle                         # stepDefinitions.Covid19GameSteps.it_routed_to_the_battle_field_game_home_page_to_select_the_battle()
+  When I click on Go to the office Game button                                                   # stepDefinitions.Covid19GameSteps.i_click_on_go_to_the_office_game_button()
+  Then Working at home game start button is displayed and click on the button to start the game  # stepDefinitions.Covid19GameSteps.working_at_home_game_start_button_is_displayed_and_click_on_the_button_to_start_the_game()
+  When I click on the Safe option for the work place game                                        # stepDefinitions.Covid19GameSteps.i_click_on_the_safe_option_for_the_work_place_game()
+  Then I can see the result for the work place game                                              # stepDefinitions.Covid19GameSteps.i_can_see_the_result_for_the_work_place_game()
+  When I click the final score button to check the score after work place game                   # stepDefinitions.Covid19GameSteps.i_click_the_final_score_button_to_check_the_score_after_work_place_game()
+  Then I will see the leadership board for the final score of warrior tes                        # stepDefinitions.Covid19GameSteps.i_will_see_the_leadership_board_for_the_final_score_of_warrior(java.lang.String)
+
+Scenario Outline: Timeout Journey of Warrior Game                                               # src/test/features/Covid19GameApplication.feature:82
+  Given I Open the  COVID19 GAME Application                                                    # stepDefinitions.Covid19GameSteps.i_open_the_covid19_the_game_application()
+  When I Enter warrior name tes and click create warrior                                        # stepDefinitions.Covid19GameSteps.i_enter_warrior_name_and_click_create_warrior(java.lang.String)
+  Then start your Journey button is displayed and I click on the button to start the game       # stepDefinitions.Covid19GameSteps.start_your_journey_button_is_displayed_and_i_click_on_the_button_to_start_the_game()
+  Then it routed to the Battle Field game Home page To Select the battle                        # stepDefinitions.Covid19GameSteps.it_routed_to_the_battle_field_game_home_page_to_select_the_battle()
+  When I click on Go to the office Game button                                                  # stepDefinitions.Covid19GameSteps.i_click_on_go_to_the_office_game_button()
+  Then Working at home game start button is displayed and click on the button to start the game # stepDefinitions.Covid19GameSteps.working_at_home_game_start_button_is_displayed_and_click_on_the_button_to_start_the_game()
+  When I am not performing any Action for few Seconds                                           # stepDefinitions.Covid19GameSteps.i_am_not_performing_any_action_for_few_seconds()
+  Then Timeout message is Displayed                                                             # stepDefinitions.Covid19GameSteps.timeout_message_is_displayed()

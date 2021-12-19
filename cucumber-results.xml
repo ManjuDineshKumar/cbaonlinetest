@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="290.572">
+    <testcase classname="COVID-19 THE GAME application" name="Covid-19 Game Default user Creation" time="15.785">
+        <system-out><![CDATA[Given I Open the  COVID19 GAME Application..................................passed
+When I click create warrior.................................................passed
+Then Default User is created and start your Journey button is displayed with Default warrior name guest.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="COVID-19 THE GAME application" name="Covid-19 Game User Creation" time="5.688">
+        <system-out><![CDATA[Given I Open the  COVID19 GAME Application..................................passed
+When I Enter warrior name tes and click create warrior......................passed
+Then User is created and start your Journey button is displayed with warrior name tes.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="COVID-19 THE GAME application" name="User Journey of Successful Public Transport warrior battle field game and check the leadership board" time="77.849">
+        <system-out><![CDATA[Given I Open the  COVID19 GAME Application..................................passed
+When I Enter warrior name tes and click create warrior......................passed
+Then start your Journey button is displayed and I click on the button to start the game.passed
+Then it routed to the Battle Field game Home page To Select the battle......passed
+When I click on the Public Transport Game...................................passed
+Then Public bus game start button is displayed and click on the button to start.passed
+When I click on the Safe option.............................................passed
+Then I can see the result...................................................passed
+When I click the final score button.........................................passed
+Then I will see the leadership board for the final score of warrior tes.....passed
+]]></system-out>
+    </testcase>
+    <testcase classname="COVID-19 THE GAME application" name="User Journey of Successful Public place battle field game and check the leadership board" time="79.783">
+        <system-out><![CDATA[Given I Open the  COVID19 GAME Application..................................passed
+When I Enter warrior name tes and click create warrior......................passed
+Then start your Journey button is displayed and I click on the button to start the game.passed
+Then it routed to the Battle Field game Home page To Select the battle......passed
+When I click on Go to a public place Game button............................passed
+Then seated at a Resturant game start button is displayed and click on the button to start the game.passed
+When I click on the Safe option for the the public place game...............passed
+Then I can see the result for the public place game.........................passed
+When I click the final score button to check the score after public place game.passed
+Then I will see the leadership board for the final score of warrior tes.....passed
+]]></system-out>
+    </testcase>
+    <testcase classname="COVID-19 THE GAME application" name="Successful Work place battle field game Journey and check the leadership board" time="74.884">
+        <system-out><![CDATA[Given I Open the  COVID19 GAME Application..................................passed
+When I Enter warrior name tes and click create warrior......................passed
+Then start your Journey button is displayed and I click on the button to start the game.passed
+Then it routed to the Battle Field game Home page To Select the battle......passed
+When I click on Go to the office Game button................................passed
+Then Working at home game start button is displayed and click on the button to start the game.passed
+When I click on the Safe option for the work place game.....................passed
+Then I can see the result for the work place game...........................passed
+When I click the final score button to check the score after work place game.passed
+Then I will see the leadership board for the final score of warrior tes.....passed
+]]></system-out>
+    </testcase>
+    <testcase classname="COVID-19 THE GAME application" name="Timeout Journey of Warrior Game" time="35.652">
+        <system-out><![CDATA[Given I Open the  COVID19 GAME Application..................................passed
+When I Enter warrior name tes and click create warrior......................passed
+Then start your Journey button is displayed and I click on the button to start the game.passed
+Then it routed to the Battle Field game Home page To Select the battle......passed
+When I click on Go to the office Game button................................passed
+Then Working at home game start button is displayed and click on the button to start the game.passed
+When I am not performing any Action for few Seconds.........................passed
+Then Timeout message is Displayed...........................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
